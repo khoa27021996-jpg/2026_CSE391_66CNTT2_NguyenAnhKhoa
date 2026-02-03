@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { 
+            font-size: 13px; 
+            background-color: #f4f4f4; 
+            padding: 20px; 
+        }
+        .form-card { 
+            background: #fff; 
+            border: 1px solid #ccc; 
+            max-width: 700px; 
+            margin: auto; 
+            padding: 25px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+        }
+        h3 { 
+            border-bottom: 2px solid #333; 
+            padding-bottom: 5px; 
+            margin-top: 25px; 
+            color: #333;
+        }
+        .form-row {
+            display: flex;
+            margin-bottom: 12px;
+            align-items: flex-start; 
+        }
+
+
+        .field-label {
+            width: 160px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .field-input {
+            flex-grow: 1; 
+        }
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #999;
+            box-sizing: border-box; 
+        }
+
+        .footer-actions {
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+            padding-top: 15px;
+            text-align: right;
+        }
+
+        .btn { padding: 6px 15px; cursor: pointer; border-radius: 2px; }
+        .btn-submit { background: #333; color: white; border: none; margin-right: 5px; }
+        .btn-cancel { background: #fff; border: 1px solid #999; }
+
+        .captcha-display { 
+            font-family: monospace; 
+            font-size: 22px; 
+            letter-spacing: 6px; 
+            font-weight: bold; 
+            margin-bottom: 5px; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-card">
+    <form action="">   
+        <h3>Basic Info</h3>
+        <div class="form-row">
+            <div class="field-label">Employee ID</div>
+            <div class="field-input">9</div>
+        </div>
+        <div class="form-row">
+            <div class="field-label">Last Name</div>
+            <div class="field-input">Dodsworth</div>
+        </div>
+        <div class="form-row">
+            <div class="field-label"><label for="fname">First Name</label></div>
+            <div class="field-input"><input type="text" id="fname" value="Anne"></div>
+        </div>
+        <div class="form-row">
+            <div class="field-label">Gender</div>
+            <div class="field-input">
+                <input type="radio" name="g" id="m"> <label for="m">Male</label><br>
+                <input type="radio" name="g" id="f"> <label for="f">Female</label><br>
+                <input type="radio" name="g" id="z" checked> <label for="z">ZZZ</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="field-label"><label for="title">Title</label></div>
+            <div class="field-input"><input type="text" id="title" value="Sales Representative"></div>
+        </div>
+        <div class="form-row">
+            <div class="field-label">Suffix</div>
+            <div class="field-input">Ms.</div>
+        </div>
+
+        <div class="form-row">
+            <div class="field-label"><label for="birthdate">BirthDate</label></div>
+            <div class="field-input">
+                <input type="text" id="birthdate" name="birthdate" value="1969-07-02 00:00:00">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="field-label"><label for="hiredate">HireDate</label></div>
+            <div class="field-input">
+                <input type="text" id="hiredate" name="hiredate" value="1994-11-15 00:00:00">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="field-label"><label for="ssn">SSN # (if applicable)</label></div>
+            <div class="field-input" style="position: relative;">
+                <input type="text" id="ssn" name="ssn" placeholder="">
+                <span style="position: absolute; right: 10px; top: 5px; color: #999;">🔒</span>
+            </div>
+        </div>
+        <h3>Contact Info</h3>
+        <div class="form-row">
+            <div class="field-label"><label for="email">Email</label></div>
+            <div class="field-input">
+                <input type="text" id="email" name="email" placeholder="name@example.com">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="field-label"><label for="address">Address</label></div>
+            <div class="field-input">
+                <input type="text" id="address" name="address" value="7 Houndstooth Rd.">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="field-label"><label for="city">City</label></div>
+            <div class="field-input">
+                <input type="text" id="city" name="city" value="London">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="field-label"><label for="region">Region</label></div>
+            <div class="field-input">
+                <input type="text" id="region" name="region">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="field-label"><label for="postalcode">Postal Code</label></div>
+            <div class="field-input">
+                <input type="text" id="postalcode" name="postalcode" value="WG2 7LT">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="field-label"><label for="country">Country</label></div>
+            <div class="field-input">
+                <select id="country" name="country">
+                    <option value="RF" selected>Russian Federation</option>
+                    <option value="VN">Vietnam</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="field-label"><label for="phone">US Home Phone</label></div>
+            <div class="field-input">
+                <input type="text" id="phone" name="phone" value="(234)234-2342">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="field-label"><label for="photo">Photo</label></div>
+            <div class="field-input">
+                <input type="text" id="photo" name="photo" value="EmpID9.bmp">
+            </div>
+        </div>
+
+        <h3>Optional Info</h3>
+        <div class="form-row">
+            <div class="field-label"><label for="notes">Notes</label></div>
+            <div class="field-input">
+                <textarea id="notes" rows="4">Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.ZZZ</textarea>
+            </div>
+        </div>
+        <div class="form-row">
+                <div class="field-label">Preferred Shift</div>
+                <div class="field-input">
+                    <input type="checkbox" id="regular"> <label for="regular">Regular</label><br>
+                    <input type="checkbox" id="gravy" checked> <label for="gravy">Gravy Yard</label>
+                </div>
+            </div>
+        <div class="form-row">
+            <div class="field-label">Are you human?</div>
+            <div class="field-input">
+                <div class="captcha-display">TIDAWO</div>
+                <input type="text" style="width: 200px;">
+            </div>
+        </div>
+
+        <div class="footer-actions">
+            <button type="submit" class="btn btn-submit">Submit</button>
+            <button type="button" class="btn btn-cancel">Cancel</button>
+        </div>
+        
+    </form>
+</div>
+
+</body>
+</html>
