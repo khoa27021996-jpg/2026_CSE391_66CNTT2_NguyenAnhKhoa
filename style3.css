@@ -1,0 +1,55 @@
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    color: black;
+}S
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 80px;
+}
+
+.t1{
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.t2{
+    flex: 0 0 350px;
+    background: white;
+    padding: 40px;
+    border: 1px solid gray;
+}
+
+.t2 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: rgb(161, 159, 159);
+    margin-bottom: 30px;
+}
+
+.author{
+    display: block;
+    color: black;
+}
+
+.author .title {
+    font-size: 0.8rem;
+    color: rgb(50, 126, 234);
+}
+
+.main-text {
+    flex: 1;
+}
+
+.main-text p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+}

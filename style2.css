@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    background-color: rgb(138, 192, 228);
+    font-family: Arial;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    color: yellow;
+}
+nav{
+    padding: 5px;
+    border: 1px solid yellow;
+}
+nav a{
+    text-decoration: none;
+    color: yellow;
+}
+.t1{
+    background: url('ocean-background.jpg');
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.t2{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    color: white;
+    border-radius: 10px;
+}
+button{
+    background-color: yellow;
+}
+.t4{
+    display: flex;
+    flex-wrap: wrap;
+}
+.t3 div{
+    display: flex;
+    justify-content: center;
+}
+.t3 h2{
+    text-align: center;
+}
+button:hover{
+    background-color: green;
+}
