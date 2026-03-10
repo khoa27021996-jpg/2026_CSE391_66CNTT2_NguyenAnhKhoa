@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bang diem sinh vien</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <h2>Bang diem sinh vien</h2>
+    <input type="text" id = "name" placeholder="Nhap ho ten sinh vien">
+    <input type = 'number' id = "diem" placeholder="Nhap diem">
+    <button type = "submit" id = "btn">Them</button>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Ho ten</th>
+                <th>Diem</th>
+                <th>Xep loai</th>
+                <th>Thao tac</th>
+            </tr>
+        </thead>
+        <tbody id = "tablebody">
+
+        </tbody>
+    </table>
+    <div id="statistics" style="margin-top: 15px; font-weight: bold;">
+        Tổng số SV: <span id="totalStudents">0</span> | 
+        Điểm trung bình: <span id="avgScore">0</span>
+    </div>
+    <script src = "main.js"></script>
+</body>
+</html>
