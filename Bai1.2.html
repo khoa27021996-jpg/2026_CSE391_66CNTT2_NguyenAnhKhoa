@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bang diem sinh vien</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <h2>Bang diem sinh vien</h2>
+    <input type="text" id = "name" placeholder="Nhap ho ten sinh vien">
+    <input type = 'number' id = "diem" placeholder="Nhap diem">
+    <button type = "submit" id = "btn">Them</button>
+    <div class="filters" style="display: flex; gap: 10px; margin-bottom: 15px;">
+        <input type="text" id="searchInput" placeholder="Tìm tên sinh viên...">
+        
+        <select id="filterRank">
+            <option value="all">Tất cả xếp loại</option>
+            <option value="Giỏi">Giỏi</option>
+            <option value="Khá">Khá</option>
+            <option value="Trung bình">Trung bình</option>
+            <option value="Yếu">Yếu</option>
+        </select>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ tên</th>
+                <th id="sortScore" style="cursor: pointer;">Điểm <span id="sortIcon">↕</span></th>
+                <th>Xếp loại</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+    </table>
+    <div id="statistics" style="margin-top: 15px; font-weight: bold;">
+        Tổng số SV: <span id="totalStudents">0</span> | 
+        Điểm trung bình: <span id="avgScore">0</span>
+    </div>
+    <script src = "main.js"></script>
+</body>
+</html>

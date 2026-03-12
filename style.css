@@ -1,0 +1,22 @@
+table{
+    margin-top: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: center;
+}
+.btn-delete{
+    background-color: rgb(53, 97, 232);
+    color: white;
+    border: none;
+    padding: 5px;
+}
+.btn-delete:hover{
+    background-color: blue;
+}
+.highlight-weak { background-color: lightyellow !important; }
