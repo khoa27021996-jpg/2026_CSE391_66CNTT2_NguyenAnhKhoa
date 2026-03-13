@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dang ki tai khoan</h1>
+    <form class="a1" id = "registerForm" novalidate>
+        <div>
+        <label>Ho va ten</label>
+        <br>
+        <input type = "text" id = "name" placeholder="Nhap ho va ten">
+        <small class="error-msg" id="name-error"></small>      
+        </div>
+        <div>
+        <label>Email</label>
+        <br>
+        <input type = "email" id = "email" placeholder="name@domain.com">
+        <small class="error-msg" id="email-error"></small>           
+        </div>
+        <div>
+        <label>So dien thoai</label>
+        <br>
+        <input type = "text" id = "sdt" placeholder="10 chu so">
+        <small class="error-msg" id="sdt-error"></small>           
+        </div>
+        <div>
+        <label>Mat khau</label>
+        <br>
+        <input type = "password" id = "password" placeholder="8 ki tu">
+        <small class="error-msg" id="password-error"></small>
+        </div>
+        <div>
+        <label>Xac nhan mat khau</label>
+        <br>
+        <input type="password" id = "confirmPassword">
+        <small class="error-msg" id="confirmPassword-error"></small>           
+        </div>
+        <div>
+        <label>Gioi tinh</label>
+        <br>            
+        <input type = "radio" name="gender" value="Nam">Nam
+        <input type="radio" name="gender" value="Nu">Nu
+        <small class="error-msg" id="gender-error"></small>           
+        </div>
+        <div>
+            <input type="checkbox" id="terms"> Tôi đồng ý với điều khoản
+            <small class="error-msg" id="terms-error"></small>
+        </div>
+        <button type = "submit">Dang ki</button>
+    </form>
+    <div id="success-msg" style="display: none;"></div>
+    <script src="main.js"></script>
+</body>
+</html>
